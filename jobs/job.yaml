@@ -1,0 +1,14 @@
+kind: Job
+apiVersion: batch/v1
+metadata:
+  name: myjob
+spec:
+  template:
+    spec:        
+      containers:
+      - name: myjob
+        image: appropriate/curl:latest
+        command: ["curl"]
+        args: ["-i", "http://jsonplaceholder.typicode.com/posts/1"]
+      restartPolicy: Never
+

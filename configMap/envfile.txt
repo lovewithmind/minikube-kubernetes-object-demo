@@ -1,0 +1,5 @@
+URL=google.com
+PATH=/search
+LLL=asdasd
+MONGO=123
+KAFKA=localhost:9092

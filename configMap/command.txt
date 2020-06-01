@@ -1,0 +1,7 @@
+kubectl create cm literal-config --from-literal=name=myname
+
+kubectl create cm file-config --from-file=mongoUrl.txt
+
+kubectl create cm env-config --from-env-file=envfile.txt
+
+kubectl create cm dir-config --from-file=configdir/
